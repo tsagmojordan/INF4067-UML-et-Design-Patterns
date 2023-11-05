@@ -54,6 +54,7 @@ public class App {
 
                 while (lecteur.hasNextLine()) {
                     System.out.println(lecteur.nextLine());
+                    Thread.sleep(1000);//stopper le programme quelques instants avant la ligne suivante
                 }
                 lecteur.close();
 
@@ -70,7 +71,7 @@ public class App {
     
     public static void main(String[] args) throws Exception {
       
-    presenter();//tableau de bord
+    presenter();
         
 
 
