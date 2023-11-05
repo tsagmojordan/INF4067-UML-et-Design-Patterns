@@ -1,0 +1,13 @@
+Permet de créer un objet dont le type dépend du contexte
+Cet objet fait partie d’un ensemble de sous classe
+L’objet retourné est toujours du type de la classe mère
+L’utilisation d’une fabrique permet de rendre l’instanciation d’objets
+plus flexible qu’avec l’opérateur new La fabrique peut s’implémenter de 2 manières :
+•Déclarer une fabrique avec une méthode de création de l’objet qui
+attend les données nécessaires pour déterminer le type de l’objet à
+créer.
+•Déclarer la fabrique abstraite et laisser ses sous classe créer les objets
+I. Utiliser une fabrique avec une méthode de création : Factory Method
+1. Déclarer une fabrique avec une méthode de création de l’objet qui attend
+les données nécessaires pour déterminer le type de l’objet à créer.
+2. Structure générique : diagramme de classe du pattern

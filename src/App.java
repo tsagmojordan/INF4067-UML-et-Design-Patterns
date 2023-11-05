@@ -1,4 +1,6 @@
+import java.io.FileInputStream;
 import java.util.Scanner;
+
 
 public class App {
 
@@ -21,19 +23,13 @@ public class App {
             /* System.out.println("veillez saisir de nouveau votre choix");
              choix = input.nextInt(); */
         }
-       
-      
-        
-    } 
 
-    public static void main(String[] args) throws Exception {
-      
-        presenter();//tableau de bord
 
         switch(choix){
             case 1:
             System.out.println("bon choix");
             System.out.println("qu'est ce que le parttern factory method?");
+            lire("PrincipeFactoryMethod.txt");
             break;
 
             case 2:
@@ -42,9 +38,41 @@ public class App {
             break;
             
             default : 
+            System.out.println("veillez reessayer");
             presenter();
         }
         
+       
+    }
+
+     //cette classe permet de lire le fichier texte qu'on lui passe en paramètre
+        public static void lire(String fileName){
+            
+            try {
+                FileInputStream file = new FileInputStream("src/Files/"+ fileName);
+                Scanner  lecteur = new Scanner(file);
+
+                while (lecteur.hasNextLine()) {
+                    System.out.println(lecteur.nextLine());
+                }
+                lecteur.close();
+
+                
+            } catch (Exception e) {
+                System.out.println("Oups! une erreur est survenue");
+                e.printStackTrace();
+            }
+
+
+        }
+
+        
+    
+    public static void main(String[] args) throws Exception {
+      
+    presenter();//tableau de bord
+        
+
 
 
         
