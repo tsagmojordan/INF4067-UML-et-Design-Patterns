@@ -1,6 +1,4 @@
-package FactoryMethod;
-
-import FactoryMethod.ProduitFactory.ProduitA;
+package FactoryMethod.ProduitFactory;
 
 public class ProduitA2 extends ProduitA {
     

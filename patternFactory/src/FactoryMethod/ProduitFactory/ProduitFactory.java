@@ -1,5 +1,4 @@
 package FactoryMethod.ProduitFactory;
-import FactoryMethod.ProduitA2;
 
 public class ProduitFactory {
     

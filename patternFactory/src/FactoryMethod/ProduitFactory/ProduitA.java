@@ -1,4 +1,4 @@
-package FactoryMethod;
+package FactoryMethod.ProduitFactory;
 
 public abstract class ProduitA {
     

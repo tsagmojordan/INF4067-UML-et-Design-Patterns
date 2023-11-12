@@ -1,12 +1,8 @@
 import java.io.FileInputStream;
 import java.util.Scanner;
 
-import FactoryMethod.ProduitA;
-
-
-public class App {
-
-      static Scanner input = new Scanner(System.in);
+public class Accueil {
+        static Scanner input = new Scanner(System.in);
       public static int choix = 0;
 
       // cette methode nous permet d'avoir une sorte de tableau de bord pour navigez entre les differents patrons
@@ -69,17 +65,4 @@ System.out.println("veillez choisir le parrtern que vous souhaitez expérimenter
 
         }
 
-        
-    
-    public static void main(String[] args) throws Exception {
-      
-    presenter();
-     
-
-
-
-        
-    }
-
-        
 }
