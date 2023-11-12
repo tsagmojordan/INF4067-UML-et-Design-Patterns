@@ -1,6 +1,4 @@
 package FactoryMethod.ProduitFactory;
-import FactoryMethod.ProduitA;
-import FactoryMethod.ProduitA1;
 import FactoryMethod.ProduitA2;
 
 public class ProduitFactory {

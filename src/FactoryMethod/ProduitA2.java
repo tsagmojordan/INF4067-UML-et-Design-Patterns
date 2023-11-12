@@ -1,5 +1,7 @@
 package FactoryMethod;
 
+import FactoryMethod.ProduitFactory.ProduitA;
+
 public class ProduitA2 extends ProduitA {
     
     public void methodeA() {

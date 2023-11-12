@@ -1,6 +1,8 @@
 import java.io.FileInputStream;
 import java.util.Scanner;
 
+import FactoryMethod.ProduitA;
+
 
 public class App {
 
@@ -11,7 +13,7 @@ public class App {
       public static void presenter(){
             
         System.out.println("*********hello  dear DEV*******");
-        System.out.println("veillez choisir le parrtern que vous souhaitez expérimenter");
+System.out.println("veillez choisir le parrtern que vous souhaitez expérimenter");
         System.out.println("entrez 1 pour le parttern FACTORY METHOD");
         System.out.println("entrez 2 pour le pattern ABSTRACT FACTORY");
 
@@ -54,7 +56,7 @@ public class App {
 
                 while (lecteur.hasNextLine()) {
                     System.out.println(lecteur.nextLine());
-                    Thread.sleep(1000);//stopper le programme quelques instants avant la ligne suivante
+                    Thread.sleep(3000);//stopper le programme quelques instants avant la ligne suivante
                 }
                 lecteur.close();
 
@@ -72,7 +74,7 @@ public class App {
     public static void main(String[] args) throws Exception {
       
     presenter();
-        
+     
 
 
 
